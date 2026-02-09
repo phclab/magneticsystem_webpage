@@ -1,0 +1,61 @@
+/* 基本頁面樣式 */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.NavigationScroller {
+    position: fixed;  /* 使側邊欄固定在頁面左側 */
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #333;
+    color: white;
+    padding-top: 0px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.menu {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu p {
+    margin-top: 10px;
+    margin-bottom: 0px;
+    color: rgb(153, 145, 242);
+    text-decoration: none;
+    display: block;
+}
+.menu li {
+    padding: 5px 20px;
+}
+
+.menu li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    display: block;
+}
+
+/* 當漢堡選單被點擊時，側邊欄可切換 */
+.menu-icon {
+    font-size: 30px;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.Content {
+    margin-left: 250px;  /* 留出位置給左側的側邊欄 */
+    padding: 20px;
+}
+
+@media (max-width: 768px) {
+    .NavigationScroller {
+        transform: translateX(-100%); /* 使側邊欄隱藏在較小的螢幕上 */
+    }
+
+    .Content {
+        margin-left: 0; /* 當螢幕小時，內容會填滿頁面 */
+    }
+}

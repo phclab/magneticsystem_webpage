@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="Python based, open source magnetic coil experiment control system."/>
+    <title>MagnetoEcosystem|User Guide</title>
+    <link rel="stylesheet" href="css/theme.css" />
+    <link rel="stylesheet" href="Web.css" />
+</head>
+
+<body class="Navigation" role="document">
+    <div class="NavigationPart">
+      <nav data-toggle="Navigation Slider" class="Navigation Slide">
+      <div class="NavigationScroller">
+        <div class="NavigationSearch">
+          <a href="https://chianglab.wixsite.com/chianglab">
+            <img src="logo.png"  width="100" height="100" class="logo" alt="Logo"/>
+          </a>
+          <div role="search">
+            <form id ="Search input" class="Search input" action="XXXXX" method="XXXXX">
+                <input type="text" name="q" placeholder="Search" title="Search" />
+            </form>
+          </div>
+        </div>
+  
+        <div class="menu" data-spy="affix" role="navigation" aria-label="Navigation menu">
+          <ul class="Home">
+            <li class="menu-Home"><a class="Reference to Home" href="index.html">Home</a>
+              <ul class="Home">
+                <li class="menu-Title"><a class="Reference " href="index.html#Overview">Overview</a>
+                </li>
+                <li class="menu-Title"><a class="Reference" href="index.html#Start">Getting started</a>
+                  <ul>
+                    <li class="menu-Subtitle"><a class="Reference" href="index.html#Dependencies">Dependencies</a>
+                    </li>
+                    <li class="menu-Subtitle"><a class="Reference" href="index.html#Installation">Installation</a>
+                    </li>
+                    <li class="menu-Subtitle"><a class="Reference" href="index.html#Hardware">Hardware</a>
+                    </li>
+                    <li class="menu-Subtitle"><a class="Reference" href="index.html#Experiment">Running an experiment</a>
+                    </li>
+                    <li class="menu-Subtitle"><a class="Reference" href="index.html#Testing">System testing</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <p class="Instruction"><span class="Instruction phase">User Guide</span></p>
+            <ul>
+                <li class="menu-Title"><a class="Reference" href="User_Guide.html#Graphical user interface">Graphical user interface (GUI)</a>
+                  <ul>
+                    <li class="menu-Subtitle"><a class="Reference" href="User_Guide.html#Protocol Page">Protocol Page</a>
+                    </li>
+                    <li class="menu-Subtitle"><a class="Reference" href="User_Guide.html#Sensor Page">Sensor Page</a>
+                    </li>
+                    <li class="menu-Subtitle"><a class="Reference" href="User_Guide.html#Camera Page">Camera Page</a>
+                    </li>
+                    <li class="menu-Subtitle"><a class="Reference" href="User_Guide.html#Stimulation Page">Stimulation Page</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="menu-Title"><a class="Reference" href="User_Guide.html#Hardware">Hardware</a>
+                </li>
+                <!--<li class="menu-Title"><a class="Reference" href="User_Guide.html#Troubleshooting">Troubleshooting</a>
+                </li>-->
+            </ul>
+          <p class="Instruction"><span class="Instruction phase">Resources</span></p>
+          <ul>
+              <li class="menu-Title"><a class="Reference" href="Resources.html">Sensor Components</a>
+              </li>
+          </ul>
+          <!--<p class="Instruction"><span class="Instruction phase">About</span></p>
+          <ul>
+              <li class="menu-Title"><a class="Reference" href="About/Release/">Release</a>
+              </li>
+              <li class="menu-Title"><a class="Reference" href="About/license/">License</a>
+              </li>
+          </ul>-->
+          <p class="Instruction"><span class="Instruction phase">Quick Links</span></p>
+          <ul>
+              <!--<li class="menu-Title"><a class="" href="XXXXX">Help</a>
+              </li>-->
+              <li class="menu-Title"><a class="" href="https://github.com/phclab/project_msbldg6556">GitHub</a>
+              </li>
+              <!--<li class="menu-Title"><a class="" href="XXXXX">Paper</a>
+              </li>-->
+          </ul>
+        </div>
+      </div>
+      </nav>
+    
+      <section data-toggle="Navigation Slider" class="Navigation Wrap">
+        <nav class="Navigation Top" role="navigation" aria-label="Mobile Navigation Menu">
+            <i data-toggle="Navigation Top" class="Navigation Bar"></i>
+            <a href=".">MagnetoEcosystem</a>       
+        </nav>
+        <div class="Content with Navigation">
+            <div class="Content">
+              <div role="Content" aria-label="Content">
+                <ul class="Breadcrumbs">
+                  <li><a href="index.html" class="icon-Home" alt="Docs"></a> &raquo;</li><li>Home</li>
+                  <li class="Breadcrumbs right side">
+                      <a href="https://chianglab.wixsite.com/chianglab" class="icon-Lab">Go to Lab</a>
+                  </li>
+                </ul>
+                <hr/>
+              </div>
+            <div role="MainContent" class="Document" itemscope="itemscope" itemtype="http://schema.org/Article">
+                <div class="Article" itemprop="articleBody">
+                <h1 id="User Guide">User Guide</h1>
+                <p><strong>The MagneticSystem contains graphic user interface and hardware.</strong></p>
+                <hr />
+
+                <p><img alt="Schematic of the MagneticSystem" src="Schematic of the MagneticSystem.png" /></p>
+                <h2 id="Graphical user interface">Graphical user interface (GUI)</h2>
+                <p> The whole system consists of 4 pages, including "Protocol Page", "Sensor Page", "Camera Page" and "Stimulation Page".</p>
+                <hr />
+                
+                <h3 id="Protocol Page">Protocol Page</h3>
+                <img src="Protocol Page.png" class="Protocol Page Image" alt="Protocol Page Image"/>
+                <p>【ToolBar】</p>
+                <p>"New File" button is used for creating the blank protocol.</p>
+                <p>"Save File" button is used for saving the current protocol.</p>
+                <p>"Load File" button is used for loading the previous protocol.</p>
+                <p>"Add a new Column" button is used for adding the column after the last column in the protocol.</p>
+                <p>"Remove Last Column" button is used for removing the last column in the protocol.</p>
+                <p>"Search Arduino" button is used for connecting to the Arduino.</p>
+                <p>【Stimulation Mode】</p>
+                <p>"On-Off" means generate the alternative magnetic field in one direction.</p>
+                <p>"Biderection" means generate the alternative magnetic field in both direction.</p>
+                <p>"Always On" means generate the static magnetic field.</p>
+                <p>【Protocol Table】</p>
+                <p>"Action" row is used for opening or closing the magnetic field in the period.</p>
+                <p>"Duration(sec)" row is used for setting the durarion of the period.</p>
+                <p>"Frequency(Hz)" row is used for setting the frequency of the alternative magnetic field in the period.</p>
+                <p>"Dead Time(millisecond)" row is used for setting the dead time between each cycle in the period.</p>
+                <p>【Protocol Plot】</p>
+                <p>The plot shows the magnetic field operation with the protocol.</p>
+                <hr />
+
+                
+
+                <h3 id="Sensor Page">Sensor Page</h3>
+                <img src="Sensor Page.png" class="Sensor Page Image" alt="Sensor Page Image"/>
+                <p>【Control Mode】</p>
+                <p>Set whether the magnetic field be stopped while the sensor value is higher than the threshold.</p>
+                <p>【Sensor Detection】</p>
+                <p>Set the sensors opened in the stimulation and the threshold of each sensor.</p>
+                <hr />
+                
+
+                <h3 id="Camera Page">Camera Page</h3>
+                <img src="Camera Page.png" class="Camera Page Image" alt="Camera Page Image"/>
+                <p>【ToolBar】</p>
+                <p>"Play Video" button is used for starting the detection in the video or the stream.</p>
+                <p>"Load Video File" button is used for loading the video.</p>
+                <p>"Clear Detection ROI" button is used for resetting the area of interest.</p>
+                <p>"Stop All the System" button is used for stopping the stimulation.</p>
+                <p>【Detect Setting】</p>
+                <p>Set the mice behavior test, background color, magnetic field stopped mode and the threshold of the detection.</p>
+                <p>【Realtime Information】</p>
+                <p>The plots Show the magnetic field operation with the protocol, during the real-time stimulation and the position of the mice.</p>
+                <p>The photo Shows the current frame of the video or the stream.</p>
+                <hr />
+
+                <h3 id="Stimulation Page">Stimulation Page</h3>
+                <img src="Stimulation Page.png" class="Stimulation Page Image" alt="Stimulation Page Image"/>
+                <p>【Buttons】</p>
+                <p>"Start" button is used for starting the stimulaion.</p>
+                <p>"Stop" button is used for stopping the stimulation.</p>
+                <p>【Loading Bar】</p>
+                <p>Shows the progression of the stimulation.</p>
+                <p>【Signal Plot】</p>
+                <p>The plots Show the magnetic field operation with the protocol and during the real-time stimulation.</p>
+                <p>【Sensor Plot】</p>
+                <p>The plots Show the current value from each sensor.</p>
+                <hr />
+
+                <h1 id="Hardware">Hardware</h1>
+                <img src="In vivo PCB.png" class="In vivo PCB Image" alt="In vivo PCB Image"/>
+                <p> The console board with an Arduino Nano can control a maximum of 6 electromagnets.</p>
+                <p> The Arduino Nano generates a 5V signal that fed into NOT (SN74HC04N, Texas Instruments) and AND (SN74HC08N, Texas Instruments) logic gate IC. </p>
+                <p> On the console board, 3 AND logic chips(SN74HC08N, Texas Instruments), 2 NOT logic chips(SN74HC04N, Texas Instruments), and 6 op-amp chips (TLC2272) were used.</p>
+                <p> The Arduino Nano contains 12 pins for digital output, D2 to D13, and 7 pins for analog input/output, A1 to A7.</p>
+                <p> Pin A1 and pin A2 were used to output the signal to external devices. A3 was used for the Hall sensor reading. A4 and A5 were used for the acceleration sensor reading. A6 was used for temperature sensor reading. A7 was used for decibel sensor reading.</p>
+                </div>
+                <footer>
+                    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+                        <a href="user-guide/graphical-user-interface/" class="btn btn-neutral float-right" title="Graphical user interface (GUI)">Next <span class="icon icon-circle-arrow-right"></span></a>
+                    </div>
+
+                <hr/>
+
+                <div role="contentinfo">
+                    <!-- Copyright etc -->
+                    <p>Copyright &copy; 2024 <a href="/release-notes/">Po-Han Chiang</a>.</p>
+                </div>
+
+                </footer>
+            </section>
+    </div>
+</body>
+</html>
